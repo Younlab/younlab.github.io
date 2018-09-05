@@ -1,7 +1,7 @@
 # Site settings
 title:          Younlab
 description:    ""
-baseurl:        "/younlab"
+baseurl:        ""
 url:            "https://younlab.github.io"
 
 # Author
