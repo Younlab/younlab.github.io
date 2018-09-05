@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 960px;
   width: 80%;
 }
 
@@ -9,7 +9,7 @@ footer,
 .nav-container {
   display: block;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 960px;
   width: 80%;
 }
 
@@ -20,7 +20,7 @@ footer,
   &-container {
     margin: 1rem auto;
     position: relative;
-    text-align: center;
+    // text-align: center;
   }
 
   &-title {
@@ -29,18 +29,30 @@ footer,
     display: inline-block;
     margin: 0;
     padding-right: .2rem;
+    position: relative;
 
     &:hover,
     &:focus {
       opacity: .6;
     }
   }
+  &-title::after{
+    content: '.';
+    position: absolute;
+    right: -4px;
+    bottom: 0;
+    color: $point-red;
+  }
 
   ul {
     list-style-type: none;
     margin: 1rem 0 0;
     padding: 0;
-    text-align: center;
+    text-align: right;
+    // display: none;
+    position: absolute;
+    right: 0;
+    top: -14px;
   }
 
   li {
@@ -63,6 +75,7 @@ footer,
   a {
     color: $default-color;
     font-family: $sans-serif;
+
   }
 }
 
@@ -83,10 +96,28 @@ footer,
 footer {
   font-family: $serif-secondary;
   padding: 2rem 0;
-  text-align: center;
+  text-align: left;
 
-  span {
-    color: $default-color;
-    font-size: .8rem;
+
+
+  .accounts{
+    padding: 2rem 0;
+    span {
+      color: $grey-1;
+      font-size: 16px;
+      float: right;
+    }
+    margin-top: 16px;
+    a{
+      float: left;
+      margin-right: 24px;
+      svg{
+        fill:$grey-1;
+        width: 20px;
+      }
+      &:hover svg{
+        fill:$point-red;
+      }
+    }
   }
 }

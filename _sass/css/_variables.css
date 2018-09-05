@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 300;
+  src: local("NotoSansKR-Light"), url("//cdn.jsdelivr.net/korean-webfonts/latest/corps/google/NotoSansKR/NotoSansKR-Light-Hangul.woff2") format("woff2"), url("//cdn.jsdelivr.net/korean-webfonts/latest/corps/google/NotoSansKR/NotoSansKR-Light-Hangul.woff") format("woff");
+  font-stretch: normal;
+  unicode-range: U+0021-33FF,U+A000-F8FF,U+FB00-F251;
+}

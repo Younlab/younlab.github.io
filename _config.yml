@@ -1,14 +1,14 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
-baseurl:        "/tale"
-url:            "https://chesterhow.github.io"
+title:          Younlab
+description:    ""
+baseurl:        "/younlab"
+url:            "https://younlab.github.io"
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Sehyeon Youn
+  url:          https://younlab.github.io
+  email:        dev.younlab@gmail.com
 
 # Build settings
 markdown:       kramdown
@@ -26,4 +26,4 @@ plugins:
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+paginate:       10

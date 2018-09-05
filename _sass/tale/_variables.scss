@@ -9,10 +9,20 @@ $white: #fff;
 $blue: #4a9ae1;
 $shadow-color: rgba(0, 0, 0, .2);
 $code-color: #bf616a;
+$point-red: #FF3562;
+
+@font-face {
+  font-family: 'NotoSansKR';
+  font-style: normal;
+  font-weight: 300;
+  src: local('NotoSansKR-Light'), url("//cdn.jsdelivr.net/korean-webfonts/latest/corps/google/NotoSansKR/NotoSansKR-Light-Hangul.woff2") format('woff2'), url("//cdn.jsdelivr.net/korean-webfonts/latest/corps/google/NotoSansKR/NotoSansKR-Light-Hangul.woff") format('woff');
+  font-stretch: normal;
+  unicode-range: U+0021-33FF,U+A000-F8FF,U+FB00-F251;
+}
 
 // Fonts
-$serif-primary: 'Libre Baskerville', 'Times New Roman', Times, serif;
-$serif-secondary: Palatino, 'Palatino LT STD', 'Palatino Linotype', 'Book Antiqua', 'Georgia', serif;
+$serif-primary: 'NotoSansKR', '맑은고딕',sans-serif;
+$serif-secondary: 'Arial', sans-serif;
 $sans-serif: 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
 $monospaced: Menlo, Monaco, monospace;
 

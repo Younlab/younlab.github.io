@@ -1,13 +1,26 @@
 .catalogue {
+  padding-top: 2rem;
   &-item {
-    border-bottom: 1px solid $grey-2;
+    // border-bottom: 1px solid $grey-2;
+    border-radius: 2px;
     color: $default-color;
     display: inline-block;
-    padding: 2rem 0;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    // -webkit-box-shadow: 0px 10px 30px -10px rgba(0,0,0,.3);
+    // box-shadow: 0px 10px 30px -10px rgba(0,0,0,.3);
+    transition: all .2s ease-in-out;
+
 
     &:hover .catalogue-line,
     &:focus .catalogue-line {
       width: 5rem;
+      border-top: .2rem solid $point-red;
+    }
+
+    &:hover {
+      transform: scale(1.05);
     }
 
     &:last-child {
@@ -31,9 +44,10 @@
   }
 
   &-line {
-    @include transition(all .3s ease-out);
+    @include transition(all .2s ease-out);
     border-top: .2rem solid $default-shade;
     display: block;
+    border-radius: 0 3px;
     width: 2rem;
   }
 }
