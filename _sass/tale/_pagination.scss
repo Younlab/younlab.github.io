@@ -29,6 +29,7 @@
 
     &:hover,
     &:focus {
+      color: $point-red;
       opacity: .6;
       text-decoration: none;
     }
