@@ -4,7 +4,7 @@ title: "SQL ORDER BY(번역)"
 date: 2018-06-16
 tag:
 - SQL
-image: "../image/iterm2.jpg"
+image: "../image/sql.png"
 categories: SQL
 comments: true
 ---

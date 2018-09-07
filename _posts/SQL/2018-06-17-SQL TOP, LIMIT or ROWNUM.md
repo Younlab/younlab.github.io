@@ -4,7 +4,7 @@ title: "SQL TOP, LIMIT or ROWNUM(번역)"
 date: 2018-06-17
 tag:
 - SQL
-image: "../image/iterm2.jpg"
+image: "../image/sql.png"
 categories: SQL
 comments: true
 ---

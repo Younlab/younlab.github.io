@@ -1,30 +1,33 @@
 ---
 layout: default
 ---
+<section class="post-main-bg">
+  <div class="post-title-box">
+    <div class="post-info main">
+      <span>Written by</span>
+      {% if page.author %}
+          {{ page.author }}
+      {% else %}
+          {{ site.author.name }}
+      {% endif %}
 
-<div class="post">
-  <div class="post-info">
-    <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
-    {% endif %}
-
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
+      {% if page.date %}
+        <br>
+        <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% endif %}
+      <h1 class="post-title post-title-coustom">{{ page.title }}</h1>
+      <div class="post-line post-line-coustom"></div>
+    </div>
   </div>
+</section>
+<div class="post main">
 
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-line"></div>
 
   {{ content }}
 
 </div>
 
-<div class="pagination">
+<div class="pagination main">
   {% if page.next.url %}
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
   {% endif %}
@@ -34,3 +37,9 @@ layout: default
 
   <a href="#" class="top">Top</a>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".post-main-bg").css("background-image", "url('{{ page.image }}')");
+  });
+</script>

@@ -4,7 +4,7 @@ title: "Django Model field reference(공식문서 번역)"
 date: 2018-06-22
 tag:
 - Django
-image: "../image/iterm2.jpg"
+image: "../image/django.png"
 categories: Django
 comments: true
 ---

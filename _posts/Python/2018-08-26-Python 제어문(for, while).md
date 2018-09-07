@@ -4,7 +4,7 @@ title: "Python 제어문(for, while)"
 date: 2018-08-26
 tag:
 - python
-image: "../image/iterm2.jpg"
+image: "../image/python.png"
 categories: python
 comments: true
 ---
