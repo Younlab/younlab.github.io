@@ -4,7 +4,6 @@ title: "Jekyll blog를 이용하여 Github Page에 포스팅하기(for mac)"
 date: 2018-09-11
 tag:
 - settings
-- jekyll
 image: "../image/jekyll_github.png"
 categories: Settings
 comments: true
@@ -91,8 +90,8 @@ jekyll new 블로그명
 	  Bundler: There was an error while trying to write to
 	  Bundler: `/Users/sh/.bundle/cache/compact_index/rubygems.org.443.29b0360b937aa4d161703e6160654e47/versions`.
 	  Bundler: It is likely that you need to grant write permissions for that path.
-	  
-	
+
+
 cd 블로그명  
 	total 48
 	drwxr-xr-x   9 sh  staff   288B Sep 11 18:40 .
@@ -121,19 +120,19 @@ vi Gemfile
 	#
 	# This will help ensure the proper Jekyll version is running.
 	# Happy Jekylling!
-	
+
 	# 이부분을 주석
 	gem "jekyll", "~> 3.8.3"
-	
+
 	# This is the default theme for new Jekyll sites. You may change this to anything you like.
 	gem "minima", "~> 2.0"
-	
+
 	# If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 	# uncomment the line below. To upgrade, run `bundle update github-pages`.
-	
+
 	# 이부분을 주석 해제
 	# gem "github-pages", group: :jekyll_plugins
-	
+
 	# If you have any plugins, put them here!
 	group :jekyll_plugins do
 	  gem "jekyll-feed", "~> 0.6"
@@ -200,23 +199,23 @@ bundle exec jekyll serve
 ```sh
 vi .gitignore
 	# Created by https://www.gitignore.io/api/ruby,macos,jekyll
-	
+
 	### Jekyll ###
 	_site/
 	.sass-cache/
 	.jekyll-metadata
-	
+
 	### macOS ###
 	*.DS_Store
 	.AppleDouble
 	.LSOverride
-	
+
 	# Icon must end with two \r
 	Icon
-	
+
 	# Thumbnails
 	._*
-	
+
 	# Files that might appear in the root of a volume
 	.DocumentRevisions-V100
 	.fseventsd
@@ -225,14 +224,14 @@ vi .gitignore
 	.Trashes
 	.VolumeIcon.icns
 	.com.apple.timemachine.donotpresent
-	
+
 	# Directories potentially created on remote AFP share
 	.AppleDB
 	.AppleDesktop
 	Network Trash Folder
 	Temporary Items
 	.apdisk
-	
+
 	### Ruby ###
 	*.gem
 	*.rbc
@@ -245,10 +244,10 @@ vi .gitignore
 	/test/tmp/
 	/test/version_tmp/
 	/tmp/
-	
+
 	# Used by dotenv library to load environment variables.
 	# .env
-	
+
 	## Specific to RubyMotion:
 	.dat*
 	.repl_history
@@ -256,7 +255,7 @@ vi .gitignore
 	*.bridgesupport
 	build-iPhoneOS/
 	build-iPhoneSimulator/
-	
+
 	## Specific to RubyMotion (use of CocoaPods):
 	#
 	# We recommend against adding the Pods directory to your .gitignore. However
@@ -264,27 +263,27 @@ vi .gitignore
 	# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 	#
 	# vendor/Pods/
-	
+
 	## Documentation cache and generated files:
 	/.yardoc/
 	/_yardoc/
 	/doc/
 	/rdoc/
-	
+
 	## Environment normalization:
 	/.bundle/
 	/vendor/bundle
 	/lib/bundler/man/
-	
+
 	# for a library or gem, you might want to ignore these files since the code is
 	# intended to run in multiple environments; otherwise, check them in:
 	# Gemfile.lock
 	# .ruby-version
 	# .ruby-gemset
-	
+
 	# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
 	.rvmrc
-	
+
 	# End of https://www.gitignore.io/api/ruby,macos,jekyll
 ```
 <br>
