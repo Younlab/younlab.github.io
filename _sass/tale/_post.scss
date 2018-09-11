@@ -90,3 +90,17 @@
     margin: 0;
   }
 }
+
+@media(max-width:720px){
+  .post-title-box{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    position: relative !important;
+  }
+  .post-info{
+    width: 100% !important;
+    position: absolute !important;
+    bottom: 5rem !important;
+    padding:0 2rem !important;
+  }
+}
