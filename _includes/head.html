@@ -1,11 +1,26 @@
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> {% if page.title == "Home" %}
-  <meta name="description" content="{{ site.description }}"> {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if page.title == "Home" %}
+    <meta name="description" content="{{ site.description }}">
+  {% endif %}
 
   <title>
-    {% if page.title == "Home" %} {{ site.title }} {% else %} {{ page.title }} &middot; {{ site.title }} {% endif %}
+    {% if page.title == "Home" %}
+      {{ site.title }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
   </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ " /assets/favicon-32x32.png " | relative_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ " /assets/favicon-16x16.png " | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ " /assets/apple-touch-icon.png " | relative_url }}">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125554523-1"></script>
@@ -19,16 +34,6 @@
 
     gtag('config', 'UA-125554523-1');
   </script>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="{{ " /assets/main.css " | relative_url }}">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ " /assets/favicon-32x32.png " | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ " /assets/favicon-16x16.png " | relative_url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ " /assets/apple-touch-icon.png " | relative_url }}">
-
   <!-- RSS -->
   {% feed_meta %}
 </head>
