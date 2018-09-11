@@ -36,9 +36,8 @@ layout: default
     {{ content }}
   <!-- </div> -->
 
-
+  <div class="fb-comments" data-href="{{ site.url | append: page.url }}" data-width="100%" data-numposts="5"></div>
 </div>
-
 <div class="pagination main">
   {% if page.next.url %}
     <a href="{{ page.next.url | prepend: site.baseurl }}" class="left arrow">&#8592;</a>
