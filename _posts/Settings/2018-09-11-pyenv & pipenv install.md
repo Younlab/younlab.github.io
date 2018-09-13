@@ -25,18 +25,7 @@ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-
 ```
 > 위의 코드로 설치가 되지 않는다면 curl 이 설치되어 있지 않을 수도 있다. `sudo apt-get install curl` 로 패키지를 설치 해 준 후 다시 실행해 보자.
 
-### pyenv global(전역설정) Setting
-pyenv 로 설치한 python 을 전역에서 시스템에 설치된 python 대신 사용하도록 설정한다.
 
-```sh
-pyenv global 3.6.5
-```
-
-아래의 명령어를 입력해보면 `*` 이 `system` 에서 `3.6.5 (set by /usr/local/var/pyenv/version)` 로 이동해 있는 것을 볼 수 있다.
-
-```sh
-pyenv versions
-```
 ### mac
 shell 에서 pyenv 가 정상 작동할수 있도록 `~/.bashrc` 또는 `~/.zshrc` 의 맨 아랫구문에 아래의 코드를 삽입해준다.
 
@@ -96,6 +85,21 @@ pyenv install --list
 ```sh
 pyenv install 3.6.5
 ```
+<br>
+
+### pyenv global(전역설정) Setting
+pyenv 로 설치한 python 을 전역에서 시스템에 설치된 python 대신 사용하도록 설정한다.
+
+```sh
+pyenv global 3.6.5
+```
+
+아래의 명령어를 입력해보면 `*` 이 `system` 에서 `3.6.5 (set by /usr/local/var/pyenv/version)` 로 이동해 있는 것을 볼 수 있다.
+
+```sh
+pyenv versions
+```
+<br>
 
 ## pipenv
 python 패키지를 프로젝트별 사용하는 패키지를 분리해주고, 해당 프로젝트를 공유할 때 다른 공유자가 나의 프로젝트를 내려 받았을 때 해당 프로젝트에서 사용된 패키지를 쉽고 빠르게 내려받아 나와 동일한 환경에서 작업할수 있도록 도와주는 패키지다.
@@ -119,6 +123,7 @@ sudo apt install pipenv
 apt-get install python-pip
 pip install pipenv
 ```
+<br>
 
 ## pipenv 사용법
 사용법은 매우 간단하다. 내가 작업할 프로젝트 폴더 내부에서 해당 스크립트를 입력한다.

@@ -144,8 +144,8 @@ vi Gemfile
 실행전 `bundle`로 관리되는 패키지들을 update & install 시켜준다.
 
 ```sh
-bundle install
 bundle update
+bundle install
 ```
 만일 해당 명령어가 실행되지 않고 오류(보통 관리자권한 오류)가 뜬다면 명령어 앞에 `sudo` 라고 붙여주자
 <br>
