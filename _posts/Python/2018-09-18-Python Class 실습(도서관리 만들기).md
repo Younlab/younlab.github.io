@@ -9,8 +9,40 @@ categories: python
 comments: true
 ---
 
-## Library 도서관리시스템
+## 실습 문제
+```
+도서 관리 프로그램
+    Library, Book, User클래스 구현
+        프로그램 시작시 도서 5권 정도를 가진 상태로 시작
 
+    Library
+        attrs
+            name: 도서관명 (str)
+            book_list: 도서 목록 (Book인스턴스의 목록) (list)
+        methods
+            add_book (책 제목을 받아서 새로운 Book을 생성, self.book_list에 추가)
+            remove_book (책 제목을 받아서 해당 제목의 Book을 self.book_list에서 삭제)
+        property
+            info: 가지고 있는 도서 목록을 보기좋은 텍스트로 리턴 (빌려간 도서는 출력 안해도 됨)
+            -> print(library1.info)
+
+    Book
+        attrs
+            title: 제목
+            location: 현재 자신이 어떤 Library 또는 User에게 있는지를 출력
+        property
+            is_borrowed: 대출되었는지 (location이 User인지 Library인지 확인)
+
+    User
+        attrs
+            name: 이름
+            book_list: 가지고 있는 도서 목록
+        methods
+            borrow_book(library, book_name): library로부터 book을 가져옴
+            return_book(library, book_name): library에 book을 다시 건네줌
+```
+
+## Coding
 ```python
 class Library():
     """
