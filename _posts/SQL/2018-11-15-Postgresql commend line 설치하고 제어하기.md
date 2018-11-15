@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Postgresql commend line 설치하고 제어하기 (for mac)"
-date: 2018-06-17
+date: 2018-11-15
 tag:
 - SQL
 image: "../image/sql.png"
